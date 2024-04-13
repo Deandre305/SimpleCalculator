@@ -1,0 +1,42 @@
+package main;
+
+import java.util.Scanner;
+
+public class simpleCalculator {
+
+public static void main(String[] args) {
+	
+	Scanner scanner = new Scanner(System.in);
+	
+	System.out.println("This is a simple calculator that can only add, subtract, multiple, and divide."+ "\nPlease enter your first number.");
+	double num1 = scanner.nextDouble();
+	
+	System.out.println("Please enter your second number.");
+	double num2 = scanner.nextDouble();
+	
+	scanner.nextLine();
+	
+	System.out.println("Please enter your operating symbol.");
+	String sym = scanner.nextLine();
+	
+	if (sym.equals("*")) {
+		System.out.println(num1*num2);
+	}
+	else if (sym.equals("+")) {
+		System.out.println(num1+num2);
+	}
+	else if (sym.equals("/")) {
+		System.out.println(num1/num2);
+	}
+	
+	else if (sym.equals("-")) {
+		System.out.println(num1-num2);
+	}
+	else {
+    System.out.println("Invalid operator.");
+}
+	scanner.close();
+	
+	}
+	
+}
